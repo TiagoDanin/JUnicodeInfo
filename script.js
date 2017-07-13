@@ -10,4 +10,5 @@ function unicodeCharacter () {
 		text.charCodeAt(i).toString(16);
 	}
 	document.getElementsByClassName("Unicodes")[0].innerHTML = html;
+	return false;
 }
