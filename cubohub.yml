@@ -3,3 +3,4 @@ link_template_raw: 'https://raw.githubusercontent.com/TiagoDanin/TiagoDanin.gith
 readme: False
 iframe: True
 branch: 'master'
+language: 'JavaScript'
