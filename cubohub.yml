@@ -1,0 +1,5 @@
+template_raw: 'https://raw.githubusercontent.com/TiagoDanin/TiagoDanin.github.io/master/cubohub/default2.html'
+link_template_raw: 'https://raw.githubusercontent.com/TiagoDanin/TiagoDanin.github.io/master/cubohub/links.html'
+readme: True
+iframe: False
+branch: 'master'
