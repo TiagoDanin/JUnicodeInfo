@@ -4,3 +4,6 @@ readme: False
 iframe: True
 branch: 'master'
 language: 'JavaScript'
+gitauthor:
+  name: 'TiagoDanin'
+  email: 'TiagoDanin@outlook.com'
