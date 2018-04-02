@@ -56,7 +56,7 @@
 		<div class="uk-navbar-right">
 			<ul class="uk-navbar-nav uk-visible@s">
 					<li class=""><a href="https://github.com/TiagoDanin/JUnicodeInfo">View project on GitHub <i class="ti-github"></i></a></li>
-
+					
 			</ul>
 			<button class="uk-hidden@s uk-button uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-nav-primary" uk-icon="more-vertical">Menu</button>
 		</div>
@@ -78,6 +78,23 @@ cubohub: true
 
 
 <div class="uk-container">
+	
+<div class="uk-align-center">
+	<h1>
+		<span class="uk-text-primary uk-text-bold">Verify unicode in your text</span>
+	</h1>
+	<form role="form">
+		<div class="form-group">
+			<input type="text" class="uk-input StringText" placeholder="Text here!">
+			</br>
+			<button type="button" class="uk-button uk-button-danger uk-button-small" style="width: 100%;" onclick="unicodeCharacter()" href="#Unicodes">Check<i class="ti-arrow-right"></i></button>
+		</div>
+	</form>
+</div>
+<div class="uk-text-left">
+	<span class="Unicodes" id="Unicodes">
+	</span>
+</div>
 
 
 	<hr class="uk-margin-top-remove uk-divider-icon">
@@ -152,7 +169,7 @@ cubohub: true
 			<div class="uk-offcanvas-bar uk-flex uk-flex-column">
 				<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
 						<li class=""><a href="https://github.com/TiagoDanin/JUnicodeInfo">View project on GitHub <i class="ti-github"></i></a></li>
-
+						
 				</ul>
 			</div>
 		</div>
