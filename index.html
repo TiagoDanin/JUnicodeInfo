@@ -25,6 +25,12 @@
 	<link rel="stylesheet" href="https://tiagodanin.github.io/css/themify-icons.css">
 	<script src="https://tiagodanin.github.io/uikit-3.0.0-beta.40/js/uikit.min.js"></script>
 	<script src="https://tiagodanin.github.io/uikit-3.0.0-beta.40/js/uikit-icons.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<style>
+		footer a {
+			color: #f0506e !important;
+		}
+	</style>
 </head>
 
 <body>
@@ -56,18 +62,19 @@
 		<!--Menu desktop-->
 		<div class="uk-navbar-right">
 			<ul class="uk-navbar-nav uk-visible@s">
-					<li class=""><a href="https://github.com/TiagoDanin/JUnicodeInfo">View project on GitHub <i class="ti-github"></i></a></li>
-					
+				<li class=""><a href="https://github.com/TiagoDanin/JUnicodeInfo" style="font-size:1.2rem">View project on GitHub <i class="fab fa-github" style="margin-left: 10px;"></i></a></li>					
 			</ul>
 			<button class="uk-hidden@s uk-button uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-nav-primary" uk-icon="more-vertical">Menu</button>
 		</div>
 	</nav>
 
 		<div class="uk-card uk-card-body uk-card-primary">
-			<h3 class="uk-card-title">About</h3>
-			<div class="uk-panel">
-				<p>Verify unicode in your text by Tiago Danin.</p>
-			</div>
+			<center>
+				<h3 class="uk-card-title" style="font-size: 2.5rem">About</h3>
+				<div class="uk-panel">
+					<p style="font-size: 1.3rem">Verify unicode in your text by Tiago Danin.</p>
+				</div>
+			</center>
 		</div>
 		<hr class="uk-divider-icon">
 
@@ -89,8 +96,8 @@ baseURL: https://tiagodanin.github.io
 	<form role="form">
 		<div class="form-group">
 			<input type="text" class="uk-input StringText" placeholder="Text here!">
-			</br>
-			<button type="button" class="uk-button uk-button-danger uk-button-small" style="width: 100%;" onclick="unicodeCharacter()" href="#Unicodes">Check<i class="ti-arrow-right"></i></button>
+			<br><br>
+			<button type="button" class="uk-button uk-button-primary uk-button-large" style="width: 100%;" onclick="unicodeCharacter()" href="#Unicodes">Check<i class="ti-arrow-right"></i></button>
 		</div>
 	</form>
 </div>
@@ -112,7 +119,7 @@ baseURL: https://tiagodanin.github.io
 		<div>
 			<div class="uk-card uk-card-default uk-card-hover uk-card-body">
 				<h3 class="uk-card-title"><span uk-icon="star"></span></h3>
-				<p>1</p>
+				<p>0</p>
 			</div>
 		</div>
 	</div>
