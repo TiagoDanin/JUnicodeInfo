@@ -23,6 +23,11 @@
 	<link rel="stylesheet" href="https://tiagodanin.github.io/css/colors.css">
 	<link rel="stylesheet" href="https://tiagodanin.github.io/css/style_time.css">
 	<link rel="stylesheet" href="https://tiagodanin.github.io/css/themify-icons.css">
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
 	<script src="https://tiagodanin.github.io/uikit-3.0.0-beta.40/js/uikit.min.js"></script>
 	<script src="https://tiagodanin.github.io/uikit-3.0.0-beta.40/js/uikit-icons.min.js"></script>
 </head>
@@ -50,13 +55,12 @@
 		<div class="uk-navbar-left">
 			<a href="https://tiagodanin.github.io" class="uk-navbar-item uk-logo">
 					<img src="https://tiagodanin.github.io/images/github.png" class="my-photo uk-margin-small-right">
-					<label class="uk-visible@s">JUnicodeInfo</label>
 			</a>
 		</div>
 		<!--Menu desktop-->
 		<div class="uk-navbar-right">
 			<ul class="uk-navbar-nav uk-visible@s">
-					<li class=""><a href="https://github.com/TiagoDanin/JUnicodeInfo">View project on GitHub <i class="ti-github"></i></a></li>
+					<li class=""><a href="https://github.com/TiagoDanin/JUnicodeInfo">View project on GitHub &nbsp <i class="ti-github"></i></a></li>
 					
 			</ul>
 			<button class="uk-hidden@s uk-button uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-nav-primary" uk-icon="more-vertical">Menu</button>
@@ -81,18 +85,23 @@ baseURL: https://tiagodanin.github.io
 
 
 <div class="uk-container">
-	
-<div class="uk-align-center">
-	<h1>
-		<span class="uk-text-primary uk-text-bold">Verify unicode in your text</span>
-	</h1>
-	<form role="form">
-		<div class="form-group">
-			<input type="text" class="uk-input StringText" placeholder="Text here!">
-			</br>
-			<button type="button" class="uk-button uk-button-danger uk-button-small" style="width: 100%;" onclick="unicodeCharacter()" href="#Unicodes">Check<i class="ti-arrow-right"></i></button>
-		</div>
-	</form>
+  <div class="box">
+  <div id="header">
+    <div id="cont-lock"><i class="material-icons lock">remove_red_eye</i></div>
+    <div id="bottom-head">
+      <h1 id="logintoregister">Verify your unicode</h1>
+    </div>
+  </div> 
+   <form action="" method="post">
+    <div class="group">      
+      <input class="inputMaterial" type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Text Here</label>
+    </div>
+	 
+    <button id="buttonlogintoregister" type="submit">CHECK</button>
+  </form>
 </div>
 <div class="uk-text-left">
 	<span class="Unicodes" id="Unicodes">
