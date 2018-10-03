@@ -83,20 +83,15 @@ baseURL: https://tiagodanin.github.io
 <div class="uk-container">
 	
 <div class="uk-align-center">
-	<h1>
-		<span class="uk-text-primary uk-text-bold">Verify unicode in your text</span>
-	</h1>
-	<form role="form">
-		<div class="form-group">
-			<input type="text" class="uk-input StringText" placeholder="Text here!">
-			</br>			
-			<button type="button" class="uk-button uk-button-danger uk-button-small" style="width: 100%;" onclick="unicodeCharacter()" href="#Unicodes">Check<i class="ti-arrow-right"></i></button>
-		</div>
-	</form>
+  <h1 class="uk-text-primary uk-text-bold">Verify unicode in your text</h1>
+  <form role="form" class="form-group" uk-margin>
+      <label for="form-test-unicode" class="uk-form-label" style="font-size: 1rem;">Your Text</label>
+      <input type="text" id="form-test-unicode" type="text" class="uk-input uk-form-width-large StringText" placeholder= "e. g. %u0639%u0631%u0628%u0649">
+      <button type="button" class="uk-button uk-button-danger" onclick="unicodeCharacter()" href="#Unicodes"><i class="ti-check"></i> Check</button>
+  </form>
 </div>
 <div class="uk-text-left">
-	<span class="Unicodes" id="Unicodes">
-	</span>
+  <span class="uk-align-center" class="Unicodes" id="Unicodes"></span>
 </div>
 
 
