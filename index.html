@@ -1,19 +1,16 @@
 <div class="uk-align-center">
-	<h1>
-		<span class="uk-text-primary uk-text-bold">Verify unicode in your text</span>
+	<h1 class="uk-text-primary uk-text-bold">
+		Verify unicode in your text
 	</h1>
-	<form role="form">
-		<div class="form-group">
-			<input id="string" type="text" class="uk-input" placeholder="Text here!">
-			</br>
-			<button id="bt:check" type="button" class="uk-button uk-button-danger uk-button-small" style="width: 100%;">Check<i class="ti-arrow-right"></i></button>
-		</div>
+	<form role="form" class="form-group" uk-margin>
+		<label for="form-test-unicode" class="uk-form-label" style="font-size: 1rem;">Your Text</label>
+		<input id="string" type="text" class="uk-input uk-form-width-large" placeholder= "e. g. %u0639%u0631%u0628%u0649">
+		<button id="bt:check" type="button" class="uk-button uk-button-danger"><i class="ti-check"></i> Check</button>
 	</form>
 </div>
 <div class="uk-text-left">
-	<span class="unicodes" id="unicodes">
+	<span class="unicodes uk-align-center" id="unicodes">
 	</span>
 </div>
-</br>
 <!--<script src="dist/webpack.js"></script>-->
 <script src="https://cdn.jsdelivr.net/gh/TiagoDanin/JUnicodeInfo/dist/webpack.js"></script>
