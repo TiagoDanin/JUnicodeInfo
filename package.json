@@ -1,0 +1,41 @@
+{
+  "name": "junicodeinfo",
+  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Verify unicode in your text",
+  "author": {
+    "name": "Tiago Danin",
+    "email": "TiagoDanin@outlook.com",
+    "url": "https://TiagoDanin.github.io"
+  },
+  "license": "AGPL-3.0",
+  "keywords": [
+    "unicode",
+    "info",
+    "string",
+    "utf8"
+  ],
+  "scripts": {
+    "build": "webpack --mode production --entry . --output-library=github-vs --output-filename=lib.js --devtool source-map"
+  },
+  "private": false,
+  "repository": "https://github.com/TiagoDanin/JUnicodeInfo.git",
+  "homepage": "https://TiagoDanin.github.io/JUnicodeInfo",
+  "bugs": "https://github.com/TiagoDanin/JUnicodeInfo/issues",
+  "github": {
+    "name": "JUnicodeInfo",
+    "owner": "TiagoDanin"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist",
+    "index.js",
+    "package.json"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "4.17.1",
+    "webpack-cli": "3.1.2"
+  }
+}
