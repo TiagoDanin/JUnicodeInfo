@@ -1,7 +1,7 @@
 {
   "name": "junicodeinfo",
   "main": "index.js",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Verify unicode in your text",
   "author": {
     "name": "Tiago Danin",
@@ -16,7 +16,7 @@
     "utf8"
   ],
   "scripts": {
-    "build": "webpack --mode production --entry . --output-library=github-vs --output-filename=lib.js --devtool source-map"
+    "build": "webpack --mode production --entry . --output-filename=webpack.js"
   },
   "private": false,
   "repository": "https://github.com/TiagoDanin/JUnicodeInfo.git",
