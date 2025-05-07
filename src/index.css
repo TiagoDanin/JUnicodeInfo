@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 100% 98%;
+    --foreground: 240 60% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 244 72% 31%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 249 36% 64%;
+    --secondary-foreground: 244 72% 31%;
+
+    --muted: 249 36% 90%;
+    --muted-foreground: 244 19% 44%;
+
+    --accent: 249 36% 75%;
+    --accent-foreground: 244 72% 31%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 249 36% 84%;
+    --input: 249 36% 84%;
+    --ring: 244 72% 31%;
+
+    --radius: 0.6rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: #cec9e0; /* Versão mais clara do B5A8D5 */
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(73, 84, 204, 0.3);
+  box-shadow: 0 8px 32px rgba(77, 85, 204, 0.2);
+}
+
+.character-card {
+  transition: all 0.3s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(77, 85, 204, 0.3);
+}
+
+.animated-gradient-text {
+  background: linear-gradient(to right, #211C84, #4D55CC, #7A73D1, #B5A8D5);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-move 4s linear infinite;
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.character-appear {
+  animation: appear 0.3s ease-out forwards;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.details-section {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.details-section.open {
+  max-height: 2000px;
+}
